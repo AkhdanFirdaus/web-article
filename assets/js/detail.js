@@ -32,6 +32,8 @@ $(window).on('load', function() {
             data.forEach((comment) => {
                 $('#comments').append(commentComponent(comment))
             })
+
+            $('#count-comments').text(data.length)
         }
     })
 })
